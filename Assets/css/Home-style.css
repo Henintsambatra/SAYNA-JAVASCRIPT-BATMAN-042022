@@ -10,29 +10,207 @@
      font-weight: 200;
  }
  
- .conteneur {
-     width: 80%;
-     margin: 0 auto;
- }
- 
  :root {
-     --primary-ad-color: #f1c530;
+     --primary-ad-color: #ffff00;
      --black-ad-color: #000000;
      --white-ad-color: #ffffff;
-     --hover-actif-color: #eddfed, #19857d;
+     ---red-ad-color: #b11313;
+     ---gras-ad-color: #f8f184;
+     ---blue-ad-color: #19587d;
+     ---black-ad-color: #0d0e09;
+     ---gris-ad-color: #c4c4c4;
+     ---reds-ad-color: #eddebf;
+     ---redo-ad-color: #890008;
  }
- /* Design Navigation */
  
- #header-bat {
-     padding: 50px 0;
-     box-shadow: 102px 5px 2px #BCBBBD;
+ body {
+     margin: 0;
+     color: var(--white-ad-color);
+     background-color: var(--black-ad-color);
  }
- /* La partie Hero Design */
  
- #Batman {
-     background-image: url("../img/Home/Bathome1.png");
-     height: 800px;
+ .im {
+     display: flex;
+     overflow: hidden;
+     transition: 2s;
+ }
+ /*automatic Navigation*/
+ 
+ .navigation-auto {
+     position: absolute;
+     display: flex;
+     margin-top: 460px;
+ }
+ /*premier section du page home*/
+ 
+ .section {
+     background-image: url('../img/Home/Bathome1.png');
      background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
+     padding: 4% 10% 0% 10%;
+     position: relative;
+     background-size: 100% 100%;
+ }
+ 
+ .nav-link,
+ .nav-item {
+     color: var(--white-ad-color) !important;
+     font-size: 22px;
+ }
+ 
+ .first {
+     padding: 30% 25% 0 25%;
+     font-size: 19px;
+     font-weight: 390;
+ }
+ 
+ .firs {
+     font-size: 19px;
+     font-weight: 400;
+ }
+ 
+ .fleche {
+     position: absolute;
+     top: 50%;
+     left: 85.9%;
+ }
+ /*button */
+ 
+ .butt {
+     margin-left: 30%;
+ }
+ 
+ .cadre,
+ .butt button {
+     color: var(--white-ad-color);
+     background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 100%, 50%, 0.2) 100%);
+     margin: 10% 0 50% 0;
+ }
+ /*second section du page home*/
+ 
+ .seconde {
+     background-color: var(--black-ad-color);
+     padding: 4% 15% 0% 15%;
+     padding-bottom: 10%;
+ }
+ 
+ .second {
+     background-color: var(--black-ad-color);
+     padding: 4% 15% 0% 15%;
+ }
+ 
+ .card {
+     position: relative;
+     background-color: var(--black-ad-color);
+ }
+ 
+ .bg-dark {
+     background-color: var(--black-ad-color);
+ }
+ 
+ .cardy {
+     position: absolute;
+     background-color: transparent;
+     width: 100%;
+     top: 66%;
+     font-size: 12px;
+     display: none;
+ }
+ 
+ .cadre {
+     position: relative;
+     width: 90%;
+     margin: 10% 0 0 10%;
+ }
+ 
+ .img {
+     position: absolute;
+     top: -40%;
+     left: -10%;
+     width: 35%;
+ }
+ /* quatrieme*/
+ 
+ .slide {
+     background: linear-gradient(90deg, var(---reds-ad-color) 0%, rgba(25, 88, 125, 1) 100%);
+ }
+ 
+ .fa-solid {
+     font-size: 5rem;
+ }
+ /*sept section du page home*/
+ 
+ .sept {
+     background: linear-gradient(45deg, var(---reds-ad-color) 0%, rgb(0, 12, 19) 100%);
+     padding: 5% 10%;
+ }
+ 
+ .submit {
+     color: var(--white-ad-color);
+     background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 100%, 50%, 0.2) 100%);
+     padding: 2% 10%;
+     margin: 3% 0 0 35%;
+     border: none;
+ }
+ 
+ ::placeholder,
+ select {
+     color: var(--white-ad-color) !important;
+ }
+ 
+ .mob {
+     margin: 20px 0 0 30%;
+ }
+ 
+ .mob label {
+     border: 1px solid;
+     margin: 20px 0 0 100%;
+     color: var(--white-ad-color);
+ }
+ /*footer */
+ 
+ .left {
+     margin: 10%;
+ }
+ 
+ .right {
+     margin: 10% 0 0 80%;
+ }
+ 
+ .icon_player {
+     position: absolute;
+     top: 434%;
+     left: 45.5%;
+ }
+ 
+ .sliders {
+     animation-duration: 5s;
+     animation-name: slidein;
+ }
+ 
+ @keyframes slidein {
+     from {
+         margin-left: -100%;
+         opacity: 0;
+     }
+     25% {
+         opacity: 0;
+     }
+     to {
+         margin-left: 0%;
+         opacity: 1;
+     }
+ }
+ 
+ .slider {
+     animation-duration: 3s;
+     animation-name: slide;
+ }
+ 
+ @keyframes slide {
+     from {
+         transform: scale(0);
+     }
+     to {
+         transform: scale(1);
+     }
  }
