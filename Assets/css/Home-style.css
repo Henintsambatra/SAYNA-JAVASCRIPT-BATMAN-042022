@@ -1,41 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: MRajdhani, sans-serif;
-    font-weight: 200;
-}
-
-.conteneur {
-    width: 80%;
-    margin: 0 auto;
-}
-
-:root {
-    --primary-ad-color: #f1c530;
-    --black-ad-color: #000000;
-    --white-ad-color: #ffffff;
-    --hover-actif-color: #eddfed, #19857d;
-}
-
-
-/* Design Navigation */
-
-#header-bat {
-    padding: 50px 0;
-    box-shadow: 102px 5px 2px #BCBBBD;
-}
-
-
-/* La partie Hero Design */
-
-#Batman {
-    background-image: url("../img/Home/Bathome1.png");
-    height: 800px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Rajdhani', sans-serif;
+     font-weight: 200;
+ }
+ 
+ .conteneur {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ :root {
+     --primary-ad-color: #f1c530;
+     --black-ad-color: #000000;
+     --white-ad-color: #ffffff;
+     --hover-actif-color: #eddfed, #19857d;
+ }
+ /* Design Navigation */
+ 
+ #header-bat {
+     padding: 50px 0;
+     box-shadow: 102px 5px 2px #BCBBBD;
+ }
+ /* La partie Hero Design */
+ 
+ #Batman {
+     background-image: url("../img/Home/Bathome1.png");
+     height: 800px;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+ }
