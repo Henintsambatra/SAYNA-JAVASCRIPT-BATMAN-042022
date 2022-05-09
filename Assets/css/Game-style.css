@@ -21,8 +21,6 @@
 
 body {
     margin: 0;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 100;
     color: var(--white-ad-color);
     background-color: var(--black-ad-color);
 }
@@ -61,9 +59,14 @@ body {
 }
 
 .fleche {
-    position: absolute;
-    top: 50%;
-    left: 85.9%;
+    position: fixed;
+    top: 30%;
+    left: 86%;
+}
+
+.sliders {
+    animation-duration: 5s;
+    animation-name: slidein;
 }
 
 
@@ -73,9 +76,62 @@ body {
     margin-left: 30%;
 }
 
+h1,
+button {
+    font-family: 'Rajdhani', sans-serif;
+}
+
 .cadre,
 .bouton button {
     color: var(--white-ad-color);
     background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 100%, 50%, 0.2) 100%);
     margin: 10% 0 50% 0;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -100%;
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+.slider {
+    animation-duration: 3s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* --------quiz1------- */
+
+.allQuiz {
+    background-color: #000;
+}
+
+.quiz1,
+.quiz2 {
+    padding: 80px 0px 0px 40px;
+}
+
+.question>span {
+    background-color: #c4c4c4a3;
+    display: block;
+    width: 400px;
+    padding-left: 10px;
+    margin-top: 20px;
 }
