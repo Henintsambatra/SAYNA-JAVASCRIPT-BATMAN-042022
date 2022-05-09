@@ -17,7 +17,7 @@ menu.forEach(men => {
     })
 });
 
-//fade in 
+//fadeIn pour le titre
 let title = document.querySelectorAll("h1")
 for (let i = 0; i < title.length; i++) {
     title[i].classList.add("sliders")
@@ -36,7 +36,18 @@ for (let i = 0; i < image.length; i++) {
     image[i].classList.add("slider")
 
 }
-/*card*/
+//les rubriques du menu doivent être surligné
+let navmenu = document.querySelectorAll('a');
+
+navmenu.forEach(function(a) {
+    a.addEventListener('mouseover', () => {
+        a.style.textDecoration = 'underline';
+    });
+    a.addEventListener('mouseout', () => {
+        a.style.textDecoration = 'none';
+    });
+});
+/*Animation de la card*/
 /*Les images des trois héros Spiderman doivent zoomer légèrement et individuellement
 au passage de la souris */
 let all_card = document.querySelectorAll(".card")
@@ -57,3 +68,13 @@ all_card.forEach(card => {
         card.querySelector(".cardy").style.display = "none";
     })
 });
+//Effet sur le footer icones
+let footericones = document.getElementsByClassName('footer-icones');
+for (let i = 0; i < footericones.length; i++) {
+    footericones[i].addEventListener('mouseover', () => {
+        footericones[i].style.color = '#ffff00';
+    });
+    footericones[i].addEventListener('mouseout', () => {
+        footericones[i].style.color = 'white';
+    });
+}

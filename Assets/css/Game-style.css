@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --line-color: #BCBBBD;
+    --primary-ad-color: #ffff00;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    ---red-ad-color: #b11313;
+    ---egg-ad-color: #f8f184;
+    ---blue-ad-color: #19587d;
+    ---black2-ad-color: #0d0e09;
+    ---gris-ad-color: #c4c4c4;
+    ---ivore-ad-color: #eddebf;
+    ---redvif-ad-color: #890008;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 100;
+    color: var(--white-ad-color);
+    background-color: var(--black-ad-color);
+}
+
+#Batman {
+    padding: 4% 10% 0% 10%;
+    background-image: url('../img/Game/Batgame1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+}
+
+.nav-link,
+.nav-item {
+    color: var(--white-ad-color) !important;
+    font-size: 25px;
+}
+
+.titre-game {
+    display: flex;
+    position: relative;
+    padding: 150px 65px;
+    font-size: 60px;
+}
+
+.first {
+    padding: 30% 25% 0 25%;
+    font-size: 19px;
+    font-weight: 390;
+}
+
+.description {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.fleche {
+    position: absolute;
+    top: 50%;
+    left: 85.9%;
+}
+
+
+/*Button */
+
+.bouton {
+    margin-left: 30%;
+}
+
+.cadre,
+.bouton button {
+    color: var(--white-ad-color);
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.6) 0%, hsla(0, 100%, 50%, 0.2) 100%);
+    margin: 10% 0 50% 0;
+}
